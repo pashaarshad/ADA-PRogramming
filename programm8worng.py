@@ -4,10 +4,7 @@ def ctd(path,c):
     for i in range(len(path)-1):
         c1=path[i]
         c2=path[i+1]
-        # You forgot to use c1 and c2 to accumulate the distance
-        td += c[c1][c2]
-    # This line was wrong: c[path[-1][path[0]]] should be c[path[-1]][path[0]]
-    td += c[path[-1]][path[0]]
+    td+=c[path[-1][path[0]]]
     return td
 def tsb(c):
     nc=len(c)
