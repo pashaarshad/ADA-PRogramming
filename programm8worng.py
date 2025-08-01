@@ -4,6 +4,7 @@ def ctd(path,c):
     for i in range(len(path)-1):
         c1=path[i]
         c2=path[i+1]
+        td+=c[c1][c2]
     td+=c[path[-1][path[0]]]
     return td
 def tsb(c):
